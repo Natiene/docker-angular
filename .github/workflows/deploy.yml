@@ -31,4 +31,4 @@ jobs:
           AWS_REGION: us-east-1  # região do seu bucket S3
           S3_BUCKET: ${{ secrets.S3_BUCKET }}
         run: |
-          aws s3 sync ./dist/angular-test s3://$S3_BUCKET --delete
+          aws s3 sync ./dist/angular-test/browser s3://$S3_BUCKET --delete
